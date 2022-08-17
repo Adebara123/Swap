@@ -7,7 +7,7 @@ async function main() {
 
   const CONTRACT_ADDRESS = "";
 
-  const Lock = await ethers.getContractFactory("Lock", CONTRACT_ADDRESS);
+  const Lock = await ethers.getContractAt("Lock", CONTRACT_ADDRESS);
   const lock = await Lock.deploy();
 
   await lock.deployed();

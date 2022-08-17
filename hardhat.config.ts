@@ -7,13 +7,13 @@ type HttpNetworkAccountsUserConfig = any;
 const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
-     goerli: {
-      url: process.env.GOERLI_URL,
-      accounts: [process.env.PRIVATE_KEY] as HttpNetworkAccountsUserConfig | undefined,
-    },
+    //  goerli: {
+    //   url: process.env.GOERLI_URL,
+    //   accounts: [process.env.PRIVATE_KEY] as HttpNetworkAccountsUserConfig | undefined,
+    // },
     ropsten: {
       url: process.env.ROPSTEN_URL,
-      accounts: [process.env.PRIVATE_KEY] as HttpNetworkAccountsUserConfig | undefined,
+      accounts: [process.env.PRIVATE_KEY_2] as HttpNetworkAccountsUserConfig | undefined,
     }
   }
 };
